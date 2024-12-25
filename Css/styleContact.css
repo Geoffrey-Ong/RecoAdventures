@@ -1,0 +1,154 @@
+/*General*/
+body {
+    background-color:rgb(0, 61, 61);
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", serif;
+    color:rgb(228, 252, 252);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:rgb(0, 9, 8);
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Navbar*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navhover {
+    color:rgb(228, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:rgb(0, 9, 8);
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.navimghover {
+    text-decoration: none;
+}
+
+.navhover:hover {
+    background-color:rgb(0, 129, 114)
+}
+
+#homeimage {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/*Footer*/
+
+footer {
+    padding: 20px;
+    background-color:rgb(0, 9, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+.falsepopup {
+    padding: 10px;
+    background-color: rgb(0, 129, 114);
+    transition: all 0.5 ease;
+    border-radius: 20%;
+    color: rgb(199, 255, 255);
+    text-decoration: none;
+}
+
+
+/* Contact Section */
+
+
+.contactform {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(3, 175, 175);
+    margin: 20px;
+}
+
+.contlabel {
+    font-size: large;
+}
+
+.conttextbox {
+    height: 20px;
+    width: 350px;
+}
+
+#messagebox {
+    height: 70px;
+    width: 400px;
+    font-size: large;
+    font-family: monospace;
+}
+
+.conttextbox:invalid, #messagebox:invalid {
+    border: 2px solid #ff7768;
+    background-color: #fff;
+}
+
+.conttextbox:valid, #messagebox:valid {
+    border: 2px solid #64fc62;
+    background-color: #fff;
+}
+
+#contimage {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: auto;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: all 1s ease;
+}
+
+#contimage:hover {
+    transform: scale(1.2);
+}
+
+.imgsectcontact {
+    text-align: center;
+}
+
+#subbutton {
+    padding: 12px;
+    background-color: rgb(199, 255, 255);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+#subbutton:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+    #messagebox {
+        height: 100px;
+        width: 300px;
+        font-size: large;
+        font-family: monospace;
+    }
+
+    .conttextbox {
+        height: 20px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title> Contact Me ^^ </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Css/styleContact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    </head>
+<body>
+    <header>
+        <div class="nav">
+                <a class="navimghover" href="index.html">
+                    <img id="homeimage" src="images/Homeimage.png">
+                </a>
+                <a class="navhover" href="index.html">Home</a>
+                <a class="navhover" href="about.html">About me!</a>
+                <a class="navhover" href="contact.html">Contact me here</a>
+        </div>
+    </header>
+    <div class="Contactsgrid">
+        <div class="imgsectcontact">
+            <img id="contimage" src="images/finishcontact.png">
+            <h2>If you would like to contact me for a back and forth conversation, <br>
+                feel free to fill this form for me to get in touch.
+            </h2>
+        </div>
+        <div class="contactform" data-aos="fade-up"
+        data-aos-duration="3000">
+            <form action="contacted.html">
+                <label class="contlabel" name="namef">Name:</label> <br>
+                <input type="text" placeholder="Enter your Name" required class="conttextbox"> <br> <br>
+                <label class="contlabel" name="emailf">Email:</label> <br>
+                <input type="text" placeholder="Enter your Email" required class="conttextbox"> <br> <br>
+                <label class="contlabel" name="messagef">Message:</label> <br>
+                <textarea placeholder="Enter a Message!" required id="messagebox"></textarea> <br> <br>
+                <button type="Submit" value="Submit" id="subbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Want to send me some garlic bread? Click here! ~w~  </p> 
+        <a class="falsepopup" href="Garlicbread.html">Need n o w.</a>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+    </body>
+
+</html>
+

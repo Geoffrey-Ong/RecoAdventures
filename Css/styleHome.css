@@ -1,0 +1,274 @@
+/*General*/
+body {
+    background-color:rgb(0, 61, 61);
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", serif;
+    color:rgb(228, 252, 252);
+}
+
+
+header {
+    position: sticky;
+    top: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:rgb(0, 9, 8);
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Navbar*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navhover {
+    color:rgb(228, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:rgb(0, 9, 8);
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.navimghover {
+    text-decoration: none;
+}
+
+.navhover:hover {
+    background-color:rgb(0, 129, 114)
+}
+
+#homeimage {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 20px;
+    background-color:rgb(0, 9, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+.falsepopup {
+    padding: 10px;
+    background-color: rgb(0, 129, 114);
+    border-radius: 20%;
+    color: rgb(199, 255, 255);
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.falsepopup:hover {
+    padding: 15px;
+}
+
+/*Home page */
+
+.titlepage {
+    text-align: center;
+    font-size: 20px;
+    margin: 200px;
+    text-shadow: 5px 5px black;
+    transition: all 1s ease;
+}
+
+.titlepage:hover {
+    text-shadow: 7px 7px black;
+    transform: scale(1.1);
+    color:rgb(112, 255, 255)
+}
+
+.grid-homepage {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.places-section {
+    color: rgb(199, 255, 255);
+    width: auto;
+    padding: 10px;
+    background-color: rgb(0, 9, 8);
+    margin-top: 50px;
+    transition: all 1s ease;
+    z-index: 10
+}
+
+.places-section:hover {
+    transform: scale(1.02);
+}
+
+.place-name {
+    font-size: 40px;
+}
+
+#first-home-image {
+    width: 600px;
+    float:left;
+    border-radius: 10%;
+    margin-right: 20px;
+    z-index: 1;
+    transition: all 1 ease;
+}
+
+#second-home-image {
+    float:right;
+    width: 600px;
+    border-radius: 10%;
+    height: 500px;
+    transition: all 1 ease;
+}
+
+#third-home-image {
+    float:left;
+    width: 600px;
+    border-radius: 10%;
+    height: 600px;
+    margin-right: 20px;
+    transition: all 1 ease;
+}
+
+.place-desc {
+    padding: 5px;
+    font-size: 25px;
+    text-shadow: 1px 1px rgb(170, 255, 255);
+}
+
+.desc-read-more {
+    display:block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.desc-read-more--open {
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+
+.read-more-buto {
+    display: inline-block;
+    color:rgb(199, 255, 255);
+    padding: 10px;
+    background-color: rgb(0, 129, 114);
+    border-radius: 5%;
+    border: solid;
+    border-color: rgb(12, 50, 44);
+    border-width: 3px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.read-more-buto:hover {
+    padding: 15px;
+    opacity: 0.7;
+}
+
+.secretsection {
+    color: rgb(199, 255, 255);
+    width: auto;
+    padding: 10px;
+    background-color: rgb(0, 9, 8);
+    margin-top: 2000px;
+    margin-bottom: 50px;
+    transition: all 1s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secretsection:hover {
+    transform: scale(1.02);
+}
+
+#last-home-image {
+    float:right;
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    margin-right: 20px;
+    transition: all 1 ease;
+    display:block;
+    margin:auto;
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+
+    .grid-homepage {
+        display:block;
+        align-items: center;
+    }
+
+    #first-home-image {
+        width: 400px;
+        float:left;
+        border-radius: 10%;
+        margin-right: 20px;
+        z-index: 1;
+        transition: all 1 ease;
+    }
+
+    #second-home-image {
+        width: 400px;
+        border-radius: 10%;
+        height: 500px;
+        transition: all 1 ease;
+    }
+    
+    #third-home-image {
+        float:left;
+        width: 400px;
+        border-radius: 10%;
+        height: 600px;
+        margin-right: 20px;
+        transition: all 1 ease;
+    }
+
+    #last-home-image {
+        float:right;
+        width: 400px;
+        height: 400px;
+        border-radius: 10%;
+        margin-right: 20px;
+        transition: all 1 ease;
+    }
+    
+
+    .titlepage {
+        text-align: center;
+        font-size: 15px;
+        margin: 100px;
+        text-shadow: 5px 5px black;
+        transition: all 1s ease;
+    }
+
+    .navhover {
+        color:rgb(228, 252, 252);
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color:rgb(0, 9, 8);
+        transition: background-color 0.5s ease;
+        border-radius: 5px;
+    }
+}

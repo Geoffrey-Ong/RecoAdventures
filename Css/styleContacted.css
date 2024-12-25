@@ -1,0 +1,142 @@
+/*General*/
+body {
+    background-color:rgb(0, 61, 61);
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik Vinyl", serif;
+    color:rgb(228, 252, 252);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:rgb(0, 9, 8);
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Navbar*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navhover {
+    color:rgb(228, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:rgb(0, 9, 8);
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+    animation: vibrate 0.1s infinite;
+}
+
+.navimghover {
+    text-decoration: none;
+    animation: vibrate 0.1s infinite;
+}
+
+.navhover:hover {
+    background-color:rgb(0, 129, 114)
+}
+
+#homeimage {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/*Footer*/
+
+footer {
+    padding: 20px;
+    background-color:rgb(0, 9, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+.falsepopup {
+    padding: 10px;
+    background-color: rgb(0, 129, 114);
+    transition: all 0.5 ease;
+    border-radius: 20%;
+    color: rgb(199, 255, 255);
+    text-decoration: none;
+}
+
+/*Mystery?*/
+
+.themessage {
+    display:block;
+    margin: 100px 100px 289px 100px;
+    padding: 40px;
+    background-color: rgb(37, 76, 79);
+}
+
+.messagecontents {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    animation: vibrate 0.1s infinite;
+}
+
+#wait {
+    padding: 10px 90px;
+    font-size: large;
+    background-color: rgb(251, 223, 255);
+    border: solid white;
+    border-radius: 10%;
+    animation: shake 0.5s infinite;
+    cursor: pointer;
+    font-family: "Rubik Vinyl", serif;
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes vibrate {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-1px, -1px);}
+    50% {transform: translate(1px, -1px);}
+    75% {transform: translate(-1px, 1px);}
+    100% {transform: translate(1px, 1px);}
+}
+
+@media (min-width: 320px) and (max-width:967px) {
+    .themessage {
+        display:block;
+        margin: 30px 30px 189px 30px;
+        padding: 20px;
+        background-color: rgb(37, 76, 79);
+    }
+    .messagecontents {
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 2px 2px black;
+        animation: vibrate 0.1s infinite;
+    }
+    
+    #wait {
+        padding: 10px 50px;
+        font-size: large;
+        background-color: rgb(251, 223, 255);
+        border: solid white;
+        border-radius: 10%;
+        animation: shake 0.5s infinite;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,227 @@
+/*General*/
+body {
+    background-color:rgb(0, 61, 61);
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", serif;
+    color:rgb(228, 252, 252);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:rgb(0, 9, 8);
+    opacity: 1;
+    z-index: 100;
+}
+
+
+/* Navbar*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navhover {
+    color:rgb(228, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:rgb(0, 9, 8);
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.navimghover {
+    text-decoration: none;
+}
+
+.navhover:hover {
+    background-color:rgb(0, 129, 114)
+}
+
+#homeimage {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+    padding: 20px;
+    background-color:rgb(0, 9, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+.falsepopup {
+    padding: 10px;
+    background-color: rgb(0, 129, 114);
+    transition: all 0.5 ease;
+    border-radius: 20%;
+    color: rgb(199, 255, 255);
+    text-decoration: none;
+}
+
+/*About page*/
+
+.About-section {
+    margin-top: 30px;
+}
+
+.grid-about {
+    background-image: linear-gradient(rgb(0, 9, 8), #9df8ff);
+    padding: 50px;
+    display: flex;
+}
+
+.paragraphabout {
+    text-align: left;
+    color:rgb(228, 252, 252);
+    margin-left: 0px;
+    padding: 100px;
+    margin-right: 5px;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+#questiontextbox {
+    background-color:rgb(0, 9, 8);
+    color:rgb(228, 252, 252);
+    width: 500px;
+    font-size: large;
+    transition: all 0.5s ease;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(199, 255, 255);
+}
+
+#questiontextbox:hover {
+    border-width: 4px;
+}
+
+.submt {
+    background-color:rgb(0, 61, 61);
+    color: white;
+    border-radius: 47%;
+    font-size: 20px;
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    transition: all 1s ease;
+}
+
+.submt:hover {
+    font-size: 30px;
+}
+
+#Aboutpic {
+    height: 600px;
+    width: 450px;
+    border-style:solid;
+    border-color: #4ea0a0;
+    border-radius: 20px;
+    border-width: 5px;
+    transition: all 1s ease;
+    box-shadow: 5px 5px black;
+}
+
+#Aboutpic:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+    .grid-about {
+        background-image: linear-gradient(rgb(0, 9, 8), #9df8ff);
+        padding: 50px;
+        display: block;
+    }
+
+    #Aboutpic {
+        height: 400px;
+        width: 250px;
+        border-style:solid;
+        border-color: #4ea0a0;
+        border-radius: 20px;
+        border-width: 5px;
+        transition: all 1s ease;
+        box-shadow: 5px 5px black;
+        display:block;
+        margin: auto;
+    }
+
+    .paragraphabout {
+        text-align: left;
+        color:rgb(228, 252, 252);
+        margin-left: 0px;
+        padding: 10px;
+        margin-right: 0px;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+    }
+
+    #questiontextbox {
+        background-color:rgb(0, 9, 8);
+        color:rgb(228, 252, 252);
+        width: 300px;
+        height: 50px;
+        font-size: large;
+        transition: all 0.5s ease;
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(199, 255, 255);
+    }
+}
+
+@media (min-width: 768px) and (max-width:1225px) {
+    .grid-about {
+        background-image: linear-gradient(rgb(0, 9, 8), #9df8ff);
+        padding: 50px;
+        display: block;
+        margin: auto;
+    }
+    
+    #Aboutpic {
+        height: 500px;
+        width: 350px;
+        border-style:solid;
+        border-color: #4ea0a0;
+        border-radius: 20px;
+        border-width: 5px;
+        transition: all 1s ease;
+        box-shadow: 5px 5px black;
+    }
+
+    .paragraphabout {
+        text-align: left;
+        color:rgb(228, 252, 252);
+        margin-left: 0px;
+        padding: 10px;
+        margin-right: 0px;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+    }
+
+    #questiontextbox {
+        background-color:rgb(0, 9, 8);
+        color:rgb(228, 252, 252);
+        width: 300px;
+        height: 50px;
+        font-size: large;
+        transition: all 0.5s ease;
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(199, 255, 255);
+    }
+}
